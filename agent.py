@@ -94,7 +94,7 @@ def main():
     
             # Show the latest response from the agent
             last_msg = agent_client.messages.get_last_message_text_by_role(
-                thread_id=thread.id   
+                thread_id=thread.id,   
                 role=MessageRole.AGENT,
             )
             if last_msg:
